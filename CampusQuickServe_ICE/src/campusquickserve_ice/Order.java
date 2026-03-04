@@ -34,7 +34,7 @@ public class Order {
     }
     
     public double calculateFinalTotal() {
-        returm (calculateSubtotal() - )
+        return calculateSubtotal() + calculateVAT();
     }
 }
 
