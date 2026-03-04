@@ -46,8 +46,6 @@ public class Order {
     }
     
     public double calculateFinalTotal() {
-        return (calculateSubtotal() - )
+        return (calculateSubtotal() - calculateDiscount()) + calculateVAT();
     }
 }
-
-
