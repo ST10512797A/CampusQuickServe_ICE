@@ -1,18 +1,18 @@
 package campusquickserve_ice;
 
 public class Order {
-
+    
     //Constant
     public static final double VAT_RATE = 0.15;
-    
-        //Attributes for calculations
-        private String customerName;
-        private String = studentNumber;
-        private String = itemName;
-        private int = quantity;
-        private double = pricePerItem;        
 
-        
+    //Atributes for calculations
+    private final String customerName;
+    private final String studentNumber;
+    private final String itemName;
+    private final int quantity;
+    private final double pricePerItem;
+
+    // Constructor
     public Order(String customerName, String studentNumber, String itemName,
                  int quantity, double pricePerItem) {
 
@@ -22,41 +22,46 @@ public class Order {
         this.quantity = quantity;
         this.pricePerItem = pricePerItem;
     }
-    
-    //Getters
+
+    // Getters
     public String getCustomerName() {
-        return customerName; 
+        return customerName;
     }
-    
+
     public String getStudentNumber() {
-        return studentNumber; 
+        return studentNumber;
     }
-    
+
     public String getItemName() {
-        return itemName; 
+        return itemName;
     }
-    public int getQuantity() { 
-        return quantity; 
+
+    public int getQuantity() {
+        return quantity;
     }
-    public double getPricePerItem() { 
-        return pricePerItem; 
+
+    public double getPricePerItem() {
+        return pricePerItem;
     }
-    
+
+    // Calculation Methods
+
     public double calculateSubtotal() {
-      return quantity * pricePerItem;  
-    };
-    
+        return quantity * pricePerItem;
+    }
+
     public double calculateDiscount() {
         if (quantity > 3) {
             return calculateSubtotal() * 0.10;
-        } return 0;
+        }
+        return 0;
     }
-    
+
     public double calculateVAT() {
         double afterDiscount = calculateSubtotal() - calculateDiscount();
-        returm afterDiscount = VAT_RATE;
+        return afterDiscount * VAT_RATE;
     }
-    
+
     public double calculateFinalTotal() {
         return (calculateSubtotal() - calculateDiscount()) + calculateVAT();
     }
