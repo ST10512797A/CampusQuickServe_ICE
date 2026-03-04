@@ -1,13 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package campusquickserve_ice;
 
-/**
- *
- * @author Adam
- */
 public class Order {
-    
-}
+
+        //Attributes for calculations
+        String customerName;
+        String = studentNumber;
+        String = itemName;
+        int = quantity;
+        double = pricePerItem;        
+
+        
+        //Constructor
+        public Order(String customerName, String studentNumber, String itemName, int quantity, double pricePerItem) {
+
+            this.customerName = customerName;
+            this.studentNumber = studentNumber;
+            this.itemName = itemName;
+            this.quantity = quantity;
+            this.pricePerItem = pricePerItem;        
+        }
+
