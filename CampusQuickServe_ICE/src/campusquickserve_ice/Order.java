@@ -24,11 +24,23 @@ public class Order {
     }
     
     //Getters
-    public String getCustomerName() { return customerName; }
-    public String getStudentNumber() { return studentNumber; }
-    public String getItemName() { return itemName; }
-    public int getQuantity() { return quantity; }
-    public double getPricePerItem() { return pricePerItem; }
+    public String getCustomerName() {
+        return customerName; 
+    }
+    
+    public String getStudentNumber() {
+        return studentNumber; 
+    }
+    
+    public String getItemName() {
+        return itemName; 
+    }
+    public int getQuantity() { 
+        return quantity; 
+    }
+    public double getPricePerItem() { 
+        return pricePerItem; 
+    }
     
     public double calculateSubtotal() {
       return quantity * pricePerItem;  
