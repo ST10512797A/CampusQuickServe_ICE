@@ -4,3 +4,4 @@ Campus QuickServer needed a simple ordering system that allows staff to quickly 
 
 This system allows for:
 
+![Receipt Output](Images/ConsoleOutput.png)
